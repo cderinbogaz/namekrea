@@ -127,3 +127,5 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+/krea_brain/models/
+/krea_brain/checkpoint/
