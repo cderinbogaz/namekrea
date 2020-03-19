@@ -129,3 +129,5 @@ dmypy.json
 .pyre/
 /krea_brain/models/
 /krea_brain/checkpoint/
+.DS_Store
+.idea
