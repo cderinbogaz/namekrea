@@ -1,4 +1,5 @@
-# NameKrea
+![alt text](Namekrea.png "NameKrea Logo")
+# NameKrea An AI That Generates Domain Names
 
 Namekrea is an deep learning model which is able to
 create domain names on a given context. It uses GPT-2 model from OpenAI and the gpt-simple package. You can check out the working project
@@ -41,22 +42,26 @@ GPT-2 is already trained language model which is capable of creating text with a
 the context of a given prefix to generate text. When fine tuned based on the domain names and their meta context,
 it was able to understand the relation between domain name and the content of the website.
 
-##Step 1: Scraping Domain Names and Meta Context
+## Step 1: Scraping Domain Names and Meta Context
 GPT-2 needs lots of data to be trained properly. Quality of the data that we will use for fine tuning will have a direct effect on the model quality
 therefore we need to make sure the data we are scraping from the websites are as clean as possible.
 I have implemented several logic into the scraper.py script for reducing the amount of non-English content.
 There are still lot of room for improvement.
 
-##Step 2: Fine Tuning GPT-2 With Domain Names and Meta Context
+## Step 2: Fine Tuning GPT-2 With Domain Names and Meta Context
 When scraping is done, we need to feed the scraped data into **model_trainer.py** to fine tune and train
 the GPT-2. When you run the script it will first download the already trained 355M model and then it will start training
 If you don't have a GPU, it might take painfully long. On my research computer with 2x1070Ti's needed around 30 minutes to fully train.
 
-##Step3: Generate Domain Names with Namekrea!
+## Step3: Generate Domain Names with Namekrea!
 When training is done you will have your working model under the models directory. Use the model under this directory to run **text_generator.py**
 script and see the deep learning magic with your own eyes :)
+General architecture of the project looks like the following:
+![alt text](namekrea architecture.png "NameKrea architecture")
 
-Detailed article about this project and how-to can be found under this medium publication.
+Detailed article about this project and how-to can be found under this medium publication: https://towardsdatascience.com/how-i-fine-tuned-gpt-2-to-generate-creative-domain-names-a56d59d55aca
+
+Project is already online, if you want to test it you can [generate AI Domain Names through this link.](https://namekrea.com)
 
 
 

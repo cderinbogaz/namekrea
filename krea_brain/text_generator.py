@@ -12,8 +12,8 @@ sess = gpt2.start_tf_sess()
 # After 3 hours of debugging I have realised that you need to put also the checkpoint_dir under generate.
 
 gpt2.load_gpt2(sess,
-              # run_name=run_name,
-              # checkpoint_dir=checkpoint_dir,
+              run_name='run1',
+              checkpoint_dir=checkpoint_dir,
               model_name=model_name,
               model_dir='models',
               multi_gpu=True)
