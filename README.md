@@ -57,7 +57,7 @@ If you don't have a GPU, it might take painfully long. On my research computer w
 When training is done you will have your working model under the models directory. Use the model under this directory to run **text_generator.py**
 script and see the deep learning magic with your own eyes :)
 General architecture of the project looks like the following:
-![alt text](namekrea architecture.png "NameKrea architecture")
+![alt text](namekrea_architecture.png "NameKrea architecture")
 
 Detailed article about this project and how-to can be found under this medium publication: https://towardsdatascience.com/how-i-fine-tuned-gpt-2-to-generate-creative-domain-names-a56d59d55aca
 
