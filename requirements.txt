@@ -30,6 +30,6 @@ termcolor==1.1.0
 tldextract==2.2.2
 toposort==1.5
 tqdm==4.43.0
-urllib3==1.25.8
+urllib3==1.26.5
 Werkzeug==1.0.0
 wrapt==1.12.1
