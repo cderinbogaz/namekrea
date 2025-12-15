@@ -19,7 +19,7 @@ protobuf==3.11.3
 python-dateutil==2.8.1
 pytz==2019.3
 regex==2020.2.20
-requests==2.23.0
+requests==2.32.4
 requests-file==1.4.3
 six==1.14.0
 soupsieve==2.0
